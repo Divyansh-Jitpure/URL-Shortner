@@ -15,7 +15,7 @@ app.get("/api", async (req, res) => {
     const data = await apiurl.json(); // Assuming the API returns JSON
     const shurl = data.data.url; // Extract the short URL from the API response
 
-    res.send({ msg: shurl });
+    res.send({ shurl });
   } catch (error) {
     console.error("Error:", error);
     res.status(500).send("Error fetching shortened URL");
