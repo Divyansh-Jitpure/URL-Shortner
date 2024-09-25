@@ -8,10 +8,12 @@ app.use(cors());
 const PORT = process.env.PORT || 4000;
 
 app.get("/api", async (req, res) => {
+  const {
+    query: { url },
+  } = req;
+
   try {
-    const apiurl = await fetch(
-      "https://ulvis.net/API/write/get?url=https://www.youtube.com/watch?v=F02iMCEEQWs&list=PLMQwtTz2aDBOy5LBSbihi3Ews_01KaobY&index=9"
-    );
+    const apiurl = await fetch(`https://ulvis.net/API/write/get?url=${url}`);
     const data = await apiurl.json(); // Assuming the API returns JSON
     const shurl = data.data.url; // Extract the short URL from the API response
 
