@@ -62,7 +62,7 @@ function App() {
       <main className="grid min-h-[100dvh] grid-rows-[1fr_auto_auto] bg-[#EEEEEE]">
         {/* SEO Tags with Helmet */}
         <Helmet>
-          <title>ShoRL: A URL Shortener</title>
+          <title>ShoRL : The URL Shortener</title>
           <meta
             name="description"
             content="ShoRL is a simple URL shortener to quickly and easily shorten your long links."
@@ -88,7 +88,7 @@ function App() {
         <section className="flex flex-col items-center">
           <h1 className="mt-32 text-4xl font-bold text-[#393E46]">
             <span className="text-[#00ADB5]">ShoRL </span>:
-            <span className="text-[#00ADB5]">:</span> A URL Shortener
+            <span className="text-[#00ADB5]">:</span> The URL Shortener
           </h1>
           <div className="mt-14 flex items-center">
             <label className="text-2xl" htmlFor="urlInput">
